@@ -2,7 +2,7 @@ import React from "react";
 import User from "./User"; // Import your components
 import DoctorForm from "./DoctorForm";
 import CompetitorData from "./CompetitorData";
-import Feedback from "./feedback";
+import Feedback from "./Feedback";
 import Home from "./Home";
 
 const FullForm = () => {
