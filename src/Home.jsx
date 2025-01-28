@@ -1,5 +1,7 @@
 import React from "react";
-import HomeImg from '../../data_form/src/assets/home_img.png';
+// import HomeImg from '../../data_form/src/assets/home_img.png';
+import HomeImg from './assets/home_img.png'
+
 const Home = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-[#F3F4F6] p-4">
