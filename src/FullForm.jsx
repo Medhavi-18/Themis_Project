@@ -33,19 +33,22 @@ const FullForm = () => {
           <Feedback />
         </div>
 
+        <div>
         {/* Submit button */}
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mt-6 bg-purple">
         <button
-            type="submit"
-            className="bg-[#ef116a] text-white py-2 px-6 rounded-md hover:bg-[#d10e5d] focus:outline-none focus:ring-2 focus:ring-[#ef116a]">
-            Submit
-        </button>
-        </div>
+          type="submit"
+          className="bg-[#A54586] text-white py-2 px-6 rounded-md hover:bg-[#833f6d] focus:outline focus:ring-2 focus:ring-[#833f6d]"
+        >
+        Submit
+      </button>
+    </div>
+</div>
 
+      </form>   
 
-      </form>
+      
 
-        
 
     </div>
 
