@@ -14,9 +14,9 @@ const FullForm = () => {
           <Home/>
         </div>
 
-        <div>
+        {/* <div>
           <User />
-        </div>
+        </div> */}
 
         {/* Doctor Form Component */}
         <div>
@@ -40,10 +40,11 @@ const FullForm = () => {
           type="submit"
           className="bg-[#A54586] text-white py-2 px-6 rounded-md hover:bg-[#833f6d] focus:outline focus:ring-2 focus:ring-[#833f6d]"
         >
-        Submit
-      </button>
-    </div>
-</div>
+            Submit
+        </button>
+
+        </div>
+          </div>
 
       </form>   
 

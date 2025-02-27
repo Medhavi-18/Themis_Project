@@ -1,18 +1,34 @@
-import express from "express";
-import Bdm from "../models/Bdm.js";  // Make sure this path is correct
 
+import express from 'express';
+import { submitBdmData } from '../controllers/bdmController.js';  // Correctly import the function
+
+//-------------------------------
+//FOR BIG DATA
+import {
+    createBdmData,
+    getAllBdmData,
+    getBdmById,
+    deleteBdmById,
+  } from "../controllers/bdmController.js";
+
+
+//-------------------------------
 const router = express.Router();
 
-// GET all BDMs
-router.get("/list", async (req, res) => {
-    console.log("GET /api/bdm/list route accessed"); 
-  try {
-    const bdms = await Bdm.find();
-    res.status(200).json({ data: bdms });
-  } catch (error) {
-    res.status(500).json({ message: "Error fetching BDMs", error });
-  }
-});
+// Define POST route for form submission
+router.post('/save', submitBdmData);
 
-export default router;
 
+//--------------------------------------------------------
+//FOR BIG DATA
+router.post("/", createBdmData);
+
+
+router.get("/", getAllBdmData);
+router.get("/:id", getBdmById);
+router.delete("/:id", deleteBdmById);
+//--------------------------------------------------------
+
+//router.get();
+
+export default router;  

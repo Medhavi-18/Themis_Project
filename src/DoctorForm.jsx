@@ -3,6 +3,16 @@ import React from "react";
 const DoctorForm = () => {
   return (
     <div className="max-w-4xl mx-auto bg-white p-6 shadow-lg border border-gray-300">
+      {/* CRM Doctor Checkbox */}
+      <div className="mb-4 flex items-center">
+        <label className="font-semibold block text-left mr-2">CRM Doctor (Tick as applicable):</label>
+        <label className="flex items-center">
+          <input type="checkbox" className="mr-2" /> Yes
+        </label>
+        <label className="flex items-center ml-4">
+          <input type="checkbox" className="mr-2" /> No
+        </label>
+      </div>
       {/* Doctor Name */}
       <div className="mb-4">
         <label className="font-semibold block text-left">Name of Doctor:</label>
@@ -115,3 +125,4 @@ const DoctorForm = () => {
 };
 
 export default DoctorForm;
+
